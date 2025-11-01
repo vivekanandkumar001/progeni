@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Result for: {{ record.filename }}</h3>
+<p><strong>Score:</strong> {{ record.score }}</p>
+<pre>{{ record.result }}</pre>
+<a class="btn btn-secondary" href="{{ url_for('main.dashboard') }}">Back</a>
+{% endblock %}
