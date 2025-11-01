@@ -8,5 +8,5 @@ class Job(db.Model):
     location = db.Column(db.String(150))
     description = db.Column(db.Text)
     url = db.Column(db.String(1024))
-    embedding = db.Column(db.PickleType)  # store precomputed embedding
+    embedding = db.Column(db.PickleType)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)

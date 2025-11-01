@@ -1,6 +1,5 @@
 import uuid, time
-
-SESSION_STORE = {}  # in-memory, use Redis in prod
+SESSION_STORE = {}
 
 def start_chat(user_id, data):
     sid = f"sess_{uuid.uuid4().hex[:8]}"
@@ -12,7 +11,7 @@ def chat_step(session_id, user_message):
     if not s:
         return {"error":"session not found"}
     s['history'].append({"from":"user","text":user_message})
-    # placeholder: integrate existing_core.chatbot_rag here
-    reply = "Swami: (placeholder) — integrate OpenRouter/Groq here."
+    # Placeholder: call existing_core.chatbot_rag or external LLM
+    reply = "Swami (placeholder): Yeh bahut accha sawaal hai. (Integrate OpenRouter/Groq here)"
     s['history'].append({"from":"bot","text":reply})
     return {"reply": reply, "done": False}

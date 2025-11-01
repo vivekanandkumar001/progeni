@@ -1,8 +1,8 @@
-<!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Progeni Flask</title></head>
-  <body>
-    <h1>Progeni (Flask) — Running on Hugging Face Space</h1>
-    <p>Login / Signup and other pages will be added next.</p>
-  </body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center">
+  <h1 class="display-5">Progeni AI</h1>
+  <p class="lead">Smart resume matching & AI mock interviews</p>
+  <a class="btn btn-primary" href="{{ url_for('auth.signup') }}">Get Started</a>
+</div>
+{% endblock %}

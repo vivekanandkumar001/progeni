@@ -1,5 +1,6 @@
-# wrapper to call existing_core.model.py or root model.py
 import logging
+
+
 MODEL = None
 
 def init_model():
@@ -13,7 +14,7 @@ def init_model():
                 from model import load_model
                 MODEL = load_model()
             except Exception as e:
-                logging.warning("No model loader found: %s", e)
+                logging.warning("Model loader not found: %s", e)
                 MODEL = None
     return MODEL
 

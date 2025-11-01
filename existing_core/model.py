@@ -1,8 +1,10 @@
-# Minimal stub. Replace with your real model code.
+# existing_core/model.py
 def load_model():
-    print("Stub load_model called")
+    # Replace with actual model load logic (transformers, sentence-transformers, etc.)
+    print("Stub model load")
     return {"model":"stub"}
 
 def analyze_resume(path, model=None):
-    # simplistic demo: return dict
-    return {"message": f"Analyzed {path} (stub)", "score": 0.5, "top_jobs": []}
+    # Replace with actual analyze logic.
+    # Return consistent dict: {score: float, top_jobs: [...], suggestions: {...}}
+    return {"message": f"Analyzed (stub) {path}", "score": 0.55, "top_jobs": []}

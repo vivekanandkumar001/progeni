@@ -1,3 +1,2 @@
-# helpers used by old streamlit app — keep as backup
-def parse_pdf(path):
-    return "parsed text"
+def parse_text_stub(path):
+    return "parsed text placeholder"
