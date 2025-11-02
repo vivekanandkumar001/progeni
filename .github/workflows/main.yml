@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
 
       - name: Push to Hugging Face Space
-        uses: huggingface/actions/deploy-to-hub@v1
+        uses: huggingface/actions/deploy-to-hub@96f63458
         with:
           hf_token: ${{ secrets.HF_TOKEN }}
           # अपनी Space ID यहाँ सही करें
